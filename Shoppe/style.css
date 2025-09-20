@@ -1,0 +1,312 @@
+/* css reset */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+body {
+  padding: 3rem;
+}
+
+/* for debug */
+.mybr {
+  border: 1px solid red; /* Red Border */
+}
+
+.mybg {
+  border: 1px solid green; /* Green Border */
+}
+
+.mybb {
+  border: 1px solid blue; /* Blue Border */
+}
+
+.mybo {
+  border: 1px solid orange; /* Orange Border */
+}
+
+.mybp {
+  border: 1px solid purple; /* Purple Border */
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header div.hamburger {
+  display: none;
+}
+
+header div.logo {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 25px;
+}
+
+header div.logo::first-letter {
+  color: #a18a68;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+header a.link:hover {
+  text-decoration: underline;
+}
+
+header nav {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+header nav span {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: gray;
+}
+
+/* main styles */
+main .hero {
+  margin-top: 1rem;
+  position: relative;
+}
+
+main h2 {
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main h2 a {
+  text-decoration: none;
+  float: right;
+  color: #a18a68;
+  font-size: 1rem;
+}
+
+main h2 a:hover {
+  text-decoration: underline;
+  text-decoration-color: #a18a68;
+}
+
+main .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+main .hero-content h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+main .hero-content p {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+main .hero-content button {
+  align-self: flex-start;
+  padding: 10px 30px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+main .hero-content button:hover {
+  color: #a18a68;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Shop Section */
+.shop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  column-gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.shop .item {
+  max-width: 370px;
+}
+.shop .item span {
+  color: #a18a68;
+  font-size: 1.2rem;
+}
+
+.shop .item h3 {
+  font-weight: normal;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0.5rem;
+  color: #2c2c2c;
+}
+
+.shop .item span {
+  font-size: 1.2rem;
+}
+/* footer */
+footer {
+  margin-top: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px dashed gainsboro;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+footer .first-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .first-box div a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 0.9rem;
+  margin-left: 1.4rem;
+}
+
+footer .first-box div.input-div {
+  border-bottom: 1px solid #2c2c2c;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+footer .first-box div.input-div input {
+  padding: 10px;
+  border: none;
+}
+
+footer .first-box div.input-div input:focus {
+  outline: none;
+}
+
+footer .first-box div.input-div input::placeholder {
+  text-align: left;
+}
+
+footer .first-box div.input-div i {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-left: auto;
+}
+
+footer .second-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .second-box .social {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+footer .second-box .social i {
+  cursor: pointer;
+}
+
+/* responsive media queries */
+@media (max-width: 1050px) {
+  main .hero-content {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .shop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+
+  body {
+    padding: 2rem;
+  }
+
+  header div.hamburger {
+    display: block;
+    font-size: 1.5rem;
+    color: gray;
+  }
+}
+
+@media (max-width: 780px) {
+  footer .first-box {
+    flex-direction: column;
+  }
+
+  footer .first-box div a {
+    text-decoration: none;
+    color: #707070;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+  }
+
+  footer .first-box div.input-div {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
