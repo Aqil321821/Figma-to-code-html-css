@@ -16,7 +16,7 @@ Each project has its **own subfolder** with:
 ### 🖼️ 1.Shoppe Landing Page
 
 🔗 [Figma Design](https://www.figma.com/design/2BYrlNd9QzNLhhoaHxO1At/Shoppe--Community-?node-id=0-1&p=f&t=GnL2zHhvH19MABOp-0)  
-🌍 [Live Preview](https://your-live-link-1.com)
+🌍 [Live Preview](https://shoppe-aqil.netlify.app/)
 
 ---
 
